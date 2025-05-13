@@ -44,8 +44,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>域名已更换</h1>
-        <p>您访问的域名已更换为新的地址，正在为您跳转到新网页。</p>
+        <h1>项目已迁移</h1>
+        <p>您访问的项目已更换为新的地址，正在为您跳转到新网页。</p>
         <p>如果您的浏览器未自动跳转，请复制或点击下方链接：</p>
         <p><a id="new-url" href="#" target="_blank">正在生成新链接...</a></p>
         <p class="manual-link"><strong>手动跳转说明：</strong> 如果链接无法点击，请复制以下地址并粘贴到浏览器地址栏中：</p>
@@ -61,13 +61,13 @@
 
         // 替换域名
         //const newUrl = currentUrl.replace(oldDomain, newDomain);
+        const newUrl = "https://github.com/cndaqiang/autowzry";
 
         // 更新页面中的链接和文本
-        //document.getElementById("new-url").href = newUrl;
-        //document.getElementById("new-url").textContent = newUrl;
-        //document.getElementById("copy-url").textContent = newUrl;
+        document.getElementById("new-url").href = newUrl;
+        document.getElementById("new-url").textContent = newUrl;
+        document.getElementById("copy-url").textContent = newUrl;
 
-        const newUrl = "https://github.com/cndaqiang/autowzry";
         // 自动跳转
         setTimeout(function() {
             window.location.href = newUrl;
