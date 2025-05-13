@@ -1,8 +1,10 @@
+## 免责声明
 
-http://127.0.0.1:4000/2017/09/27/openwrt-jianshu/
+* 本项目仅为自动化技术演示，旨在展示技术原理和应用，并非游戏辅助工具。
+* 请勿使用本项目示例代码或技术方案开发任何违反游戏用户协议的工具或应用。
+* 使用本项目或基于本项目开发的内容所产生的一切法律责任由使用者自行承担。
+* 请遵守游戏用户协议，避免任何可能影响其他玩家游戏体验的行为。
+* 本项目完全免费，请警惕任何收费信息。
+* 本项目无任何交流群组，请在[GitHub](https://github.com/cndaqiang/autowzry)交流。
+* 演示源码[cndaqiang@autowzry](https://github.com/cndaqiang/autowzry)
 
-备份
-```
-tar -czvf /tmp/overlay_backup.tar.gz /overlay
-rm -rvf /overlay/* && cd / && tar -xzvf /tmp/overlay_backup.tar.gz
-```
