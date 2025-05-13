@@ -22,5 +22,4 @@
 * 请遵守游戏用户协议，避免任何可能影响其他玩家游戏体验的行为。
 * 本项目完全免费，请警惕任何收费信息。
 * 本项目无任何交流群组，请在[GitHub](https://github.com/cndaqiang/autowzry)交流。
-* 演示源码[cndaqiang@autowzry](https://github.com/cndaqiang/autowzry)
 
