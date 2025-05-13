@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>域名已更换</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 20%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            word-break: break-all; /* 防止长链接溢出 */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .manual-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>域名已更换</h1>
+        <p>您访问的域名已更换为新的地址，正在为您跳转到新网页。</p>
+        <p>如果您的浏览器未自动跳转，请复制或点击下方链接：</p>
+        <p><a id="new-url" href="#" target="_blank">正在生成新链接...</a></p>
+        <p class="manual-link"><strong>手动跳转说明：</strong> 如果链接无法点击，请复制以下地址并粘贴到浏览器地址栏中：</p>
+        <p id="copy-url" style="font-family: monospace; color: #007BFF;">正在生成新链接...</p>
+    </div>
+    <script>
+        // 获取当前访问的完整URL
+        const currentUrl = window.location.href;
+
+        // 定义旧域名和新域名
+        const oldDomain = "https://cndaqiang.github.io/WZRY";
+        const newDomain = "https://cndaqiang.github.io/autowzry";
+
+        // 替换域名
+        const newUrl = currentUrl.replace(oldDomain, newDomain);
+
+        // 更新页面中的链接和文本
+        document.getElementById("new-url").href = newUrl;
+        document.getElementById("new-url").textContent = newUrl;
+        document.getElementById("copy-url").textContent = newUrl;
+
+        // 自动跳转
+        setTimeout(function() {
+            window.location.href = newUrl;
+        }, 5000); // 5秒后跳转
+    </script>
+</body>
+</html>
